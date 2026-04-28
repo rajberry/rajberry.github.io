@@ -160,19 +160,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ──────────────────────────────────────────
-     6. CONTACT FORM BUTTON
+     6. CONTACT FORM BUTTON → Google Form
   ────────────────────────────────────────── */
+  const GOOGLE_FORM_URL = 'https://forms.gle/zxNEQhG9fy7y1fQv7';
   const sendBtn = document.getElementById('sendBtn');
+
   if (sendBtn) {
     sendBtn.addEventListener('click', () => {
-      sendBtn.textContent         = 'MESSAGE SENT ✓';
-      sendBtn.style.background    = 'var(--cyan)';
       sendBtn.style.pointerEvents = 'none';
-      setTimeout(() => {
-        sendBtn.textContent         = 'SEND MESSAGE';
-        sendBtn.style.background    = 'var(--green)';
-        sendBtn.style.pointerEvents = 'auto';
-      }, 3000);
+      sendBtn.style.background    = 'var(--cyan)';
+
+      let countdown = 3;
+      sendBtn.textContent = `REDIRECTING IN ${countdown}s...`;
+
+      const timer = setInterval(() => {
+        countdown--;
+        if (countdown > 0) {
+          sendBtn.textContent = `REDIRECTING IN ${countdown}s...`;
+        } else {
+          clearInterval(timer);
+          sendBtn.textContent = 'OPENING FORM ✓';
+          window.open(GOOGLE_FORM_URL, '_blank');
+
+          // Reset button after 2s
+          setTimeout(() => {
+            sendBtn.textContent         = 'SEND MESSAGE';
+            sendBtn.style.background    = 'var(--green)';
+            sendBtn.style.pointerEvents = 'auto';
+          }, 2000);
+        }
+      }, 1000);
     });
   }
 
