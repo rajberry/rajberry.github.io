@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RajBerry | SOC Analyst L1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ALERT BADGE -->
+  <div class="alert-badge">
+    <div class="alert-dot"></div>
+    SYSTEM STATUS: ALL CLEAR
+  </div>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar">
+    <div class="nav-logo">RAJ<span>BERRY</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#certs">Certs</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">SOC ANALYST · LEVEL 1 · ACTIVE</div>
+      <h1 class="hero-name">RAJ<span class="accent">BERRY</span></h1>
+      <div class="hero-title">
+        <span id="typewriter"></span><span class="cursor-blink"></span>
+      </div>
+      <p class="hero-desc">
+        Monitoring, detecting, and responding to cybersecurity threats in real-time.
+        Passionate about threat hunting, log analysis, and keeping systems secure 24/7.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">HIRE ME</a>
+        <a href="#experience" class="btn btn-secondary">VIEW WORK</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-num">1+</div>
+        <div class="stat-label">YEARS EXP</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">ALERTS TRIAGED</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3</div>
+        <div class="stat-label">CERTIFICATIONS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section-dark">
+    <div class="section-header">
+      <span class="section-num">01.</span>
+      <h2 class="section-title">ABOUT ME</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I am <strong>RajBerry</strong>, a passionate <strong>SOC Analyst Level 1</strong>
+          specializing in cybersecurity threat monitoring and incident response.
+          I analyze security events daily and identify suspicious activity across enterprise environments.
+        </p>
+        <p>
+          My core focus is <strong>SIEM alert triage</strong>, log analysis, and security incident
+          investigation. I have hands-on experience in network traffic analysis and malware detection.
+        </p>
+        <p>
+          My goal is to deepen expertise in <strong>Threat Intelligence</strong> and advance toward
+          Incident Response and L2 analyst roles in a dynamic security operations environment.
+        </p>
+      </div>
+
+      <div class="about-terminal">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="terminal-title">rajberry@soc:~$</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-prompt">$ </span><span class="t-cmd">whoami --verbose</span></p>
+          <p class="t-out"><span class="t-key">name:</span>      <span class="t-val">RajBerry</span></p>
+          <p class="t-out"><span class="t-key">role:</span>      <span class="t-val">SOC Analyst L1</span></p>
+          <p class="t-out"><span class="t-key">location:</span> <span class="t-val">Dhaka, Bangladesh</span></p>
+          <p class="t-out"><span class="t-key">mode:</span>     <span class="t-val">Freelance / Remote</span></p>
+          <p class="t-out"><span class="t-key">status:</span>   <span class="t-val t-green">✓ OPEN TO WORK</span></p>
+          <br>
+          <p><span class="t-prompt">$ </span><span class="t-cmd">cat focus_areas.txt</span></p>
+          <p class="t-out">▸ Threat Detection & Triage</p>
+          <p class="t-out">▸ SIEM Alert Investigation</p>
+          <p class="t-out">▸ Network Traffic Analysis</p>
+          <p class="t-out">▸ Incident Documentation</p>
+          <p class="t-out">▸ Phishing Analysis</p>
+          <br>
+          <p><span class="t-prompt">$ </span><span class="t-cursor-inline blink"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-num">02.</span>
+      <h2 class="section-title">CORE SKILLS</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon">🔍</div>
+        <div class="skill-name">THREAT DETECTION</div>
+        <ul class="skill-items">
+          <li>SIEM Alert Triage</li>
+          <li>False Positive Analysis</li>
+          <li>IoC Identification</li>
+          <li>Signature-based Detection</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">📋</div>
+        <div class="skill-name">LOG ANALYSIS</div>
+        <ul class="skill-items">
+          <li>Windows Event Logs</li>
+          <li>Linux Syslog</li>
+          <li>Firewall Logs</li>
+          <li>Web Access Logs</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">NETWORK ANALYSIS</div>
+        <ul class="skill-items">
+          <li>Wireshark Packet Analysis</li>
+          <li>NetFlow Analysis</li>
+          <li>DNS Investigation</li>
+          <li>TCP/IP Protocols</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🚨</div>
+        <div class="skill-name">INCIDENT RESPONSE</div>
+        <ul class="skill-items">
+          <li>Alert Escalation</li>
+          <li>Incident Documentation</li>
+          <li>Containment Steps</li>
+          <li>Post-Incident Reporting</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🦠</div>
+        <div class="skill-name">MALWARE ANALYSIS</div>
+        <ul class="skill-items">
+          <li>Static Analysis Basics</li>
+          <li>Sandbox Investigation</li>
+          <li>Phishing Email Analysis</li>
+          <li>Hash Verification</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">🔐</div>
+        <div class="skill-name">VULN MANAGEMENT</div>
+        <ul class="skill-items">
+          <li>CVE Research</li>
+          <li>Risk Prioritization</li>
+          <li>Patch Verification</li>
+          <li>CVSS Scoring</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── TOOLS ── -->
+  <section id="tools" class="section-dark">
+    <div class="section-header">
+      <span class="section-num">03.</span>
+      <h2 class="section-title">TOOLS & TECH</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="tools-grid">
+
+      <div class="tool-badge">
+        <span class="tool-icon">🛡️</span>
+        <div class="tool-name">SPLUNK</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot"></span>
+        </div>
+      </div>
+
+      <div class="tool-badge">
+        <span class="tool-icon">🦅</span>
+        <div class="tool-name">MS SENTINEL</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot"></span>
+          <span class="tool-dot"></span>
+        </div>
+      </div>
+
+      <div class="tool-badge">
+        <span class="tool-icon">🔭</span>
+        <div class="tool-name">ELASTIC SIEM</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot"></span>
+          <span class="tool-dot"></span>
+        </div>
+      </div>
+
+      <div class="tool-badge">
+        <span class="tool-icon">🦈</span>
+        <div class="tool-name">WIRESHARK</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot"></span>
+        </div>
+      </div>
+
+      <div class="tool-badge">
+        <span class="tool-icon">🔍</span>
+        <div class="tool-name">VIRUSTOTAL</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span>
+        </div>
+      </div>
+
+      <div class="tool-badge">
+        <span class="tool-icon">🕵️</span>
+        <div class="tool-name">ANY.RUN</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot"></span>
+          <span class="tool-dot"></span>
+        </div>
+      </div>
+
+      <div class="tool-badge">
+        <span class="tool-icon">💻</span>
+        <div class="tool-name">NMAP</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot"></span>
+        </div>
+      </div>
+
+      <div class="tool-badge">
+        <span class="tool-icon">🔐</span>
+        <div class="tool-name">CROWDSTRIKE</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot"></span>
+          <span class="tool-dot"></span>
+        </div>
+      </div>
+
+      <div class="tool-badge">
+        <span class="tool-icon">🎯</span>
+        <div class="tool-name">MITRE ATT&amp;CK</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot"></span>
+        </div>
+      </div>
+
+      <div class="tool-badge">
+        <span class="tool-icon">🌊</span>
+        <div class="tool-name">OSINT TOOLS</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot"></span>
+        </div>
+      </div>
+
+      <div class="tool-badge">
+        <span class="tool-icon">🐧</span>
+        <div class="tool-name">LINUX CLI</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span>
+        </div>
+      </div>
+
+      <div class="tool-badge">
+        <span class="tool-icon">🎫</span>
+        <div class="tool-name">SERVICENOW</div>
+        <div class="tool-level">
+          <span class="tool-dot active"></span><span class="tool-dot active"></span>
+          <span class="tool-dot active"></span><span class="tool-dot"></span>
+          <span class="tool-dot"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS ── -->
+  <section id="certs">
+    <div class="section-header">
+      <span class="section-num">04.</span>
+      <h2 class="section-title">CERTIFICATIONS</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="certs-grid">
+
+      <div class="cert-card">
+        <div class="cert-badge">🛡️</div>
+        <div class="cert-info">
+          <div class="cert-name">CompTIA Security+</div>
+          <div class="cert-org">COMPTIA</div>
+          <div class="cert-date">Obtained: 2024</div>
+        </div>
+        <span class="cert-status active">ACTIVE</span>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-badge">🔐</div>
+        <div class="cert-info">
+          <div class="cert-name">Google Cybersecurity</div>
+          <div class="cert-org">GOOGLE / COURSERA</div>
+          <div class="cert-date">Obtained: 2023</div>
+        </div>
+        <span class="cert-status active">ACTIVE</span>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-badge">🌊</div>
+        <div class="cert-info">
+          <div class="cert-name">SOC Analyst Path</div>
+          <div class="cert-org">TRYHACKME</div>
+          <div class="cert-date">Completed: 2024</div>
+        </div>
+        <span class="cert-status active">ACTIVE</span>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-badge">🎯</div>
+        <div class="cert-info">
+          <div class="cert-name">eJPT Certification</div>
+          <div class="cert-org">eLEARNSECURITY</div>
+          <div class="cert-date">Target: 2025</div>
+        </div>
+        <span class="cert-status learning">IN PROGRESS</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="section-dark">
+    <div class="section-header">
+      <span class="section-num">05.</span>
+      <h2 class="section-title">EXPERIENCE</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="t-meta">JAN 2024 – PRESENT · FREELANCE / REMOTE</div>
+        <div class="t-role">SOC Analyst Level 1</div>
+        <div class="t-company">RajBerry · Independent Analyst · Dhaka, Bangladesh</div>
+        <ul class="t-duties">
+          <li>Monitor and triage 50+ security alerts daily using Splunk and Microsoft Sentinel</li>
+          <li>Investigate phishing emails, malware incidents, and suspicious network traffic</li>
+          <li>Create and manage incident tickets; escalate confirmed threats to L2 analysts</li>
+          <li>Review Threat Intelligence feeds and maintain updated IoC watchlists</li>
+          <li>Write detailed shift handover reports and incident documentation</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="t-meta">JUN 2023 – DEC 2023 · SELF-DIRECTED</div>
+        <div class="t-role">Cybersecurity Trainee</div>
+        <div class="t-company">TryHackMe / Home Lab · Dhaka, Bangladesh</div>
+        <ul class="t-duties">
+          <li>Completed 200+ hours of hands-on SOC labs covering SIEM, threat hunting, and IR</li>
+          <li>Practiced network log analysis and vulnerability scanning in isolated lab environments</li>
+          <li>Performed packet capture and traffic analysis using Wireshark and tcpdump</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-num">06.</span>
+      <h2 class="section-title">CONTACT</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-inner">
+
+      <div class="contact-text">
+        <h3>Let's Connect</h3>
+        <p>Open to new opportunities, collaborations, or cybersecurity discussions. Feel free to reach out anytime.</p>
+        <div class="contact-links">
+          <a href="mailto:your@email.com" class="contact-link">
+            <span class="link-icon">✉</span> your@email.com
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">
+            <span class="link-icon">💼</span> linkedin.com/in/yourprofile
+          </a>
+          <a href="https://github.com/yourusername" class="contact-link" target="_blank">
+            <span class="link-icon">🐙</span> github.com/yourusername
+          </a>
+          <a href="https://tryhackme.com/p/yourname" class="contact-link" target="_blank">
+            <span class="link-icon">🎯</span> tryhackme.com/p/rajberry
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <div class="form-group">
+          <label class="form-label">// NAME</label>
+          <input type="text" class="form-input" placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">// EMAIL</label>
+          <input type="email" class="form-input" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">// MESSAGE</label>
+          <textarea class="form-input" rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="form-btn" id="sendBtn">SEND MESSAGE</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-text">© 2025 <span>RAJBERRY</span> · SOC ANALYST L1</div>
+    <div class="footer-text">STAY SECURE · <span>STAY ALERT</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
